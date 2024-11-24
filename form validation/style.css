@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./pngtree-purple-butterfly-simple-purple-gradient-border-background-picture-image_1315255.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+}
+
+.form-container {
+    max-width: 30%;                                 
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(246, 214, 250, 0.8);
+    border-radius: 10px;
+    border-color: #581a5f;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);    
+ 
+}
+
+h2 {
+    text-align: center;
+    color: #581a5f;
+    font-size: 30px;
+}
+h2:hover {
+   color: #da6be4;
+    transform: scale(1.2); 
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #f6c8f6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+input:hover {
+     transform: scale(1.02); 
+ }
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #ad4caf;
+    box-shadow: 0 0 5px rgba(173, 76, 175, 0.7);
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+textarea:hover {
+    transform: scale(1.02); 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ad4caf;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ec8bf5;
+    transform: scale(1.05); 
+}
+
+button:active {
+    transform: scale(1); 
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}

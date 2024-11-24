@@ -1,0 +1,130 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #edb1f4, rgb(230, 24, 249));
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Scoreboard styles */
+.scoreboard {
+    margin-bottom: 20px;
+}
+
+/* Button styles for X and O wins */
+.score-button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(230, 24, 249);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.score-button:hover {
+    background-color: rgb(230, 24, 249);
+    color:#fff;
+}
+
+/* Game board styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    margin-bottom: 40px; /* To make space between the board and reset button */
+    border-radius: 10px;
+    
+}
+
+/* Each cell in the board */
+.cell {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #625861;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effects on the cells */
+.cell:hover {
+    background-color: rgba(251, 210, 252, 0.8);
+    transform: scale(1.03);
+}
+
+/* Effects for 'X' and 'O' */
+.cell.x {
+    color: #2e0428;
+}
+
+.cell.o {
+    color: rgb(230, 24, 249);
+}
+
+/* Message after the game ends */
+#message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+/* Reset button styles */
+.reset-button {
+    background-color: #ffffff;
+    border: none;
+    color:rgb(230, 24, 249);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adds space between the board and button */
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color:rgb(230, 24, 249);
+    color: #ffffff;
+}
+
+/* Winning animation */
+.winner-animation {
+    animation: winnerEffect 1s ease-out;
+}
+
+@keyframes winnerEffect {
+    0% {
+        transform: scale(1);
+        background-color: rgba(0, 255, 0, 0.5);
+    }
+    100% {
+        transform: scale(1.1);
+        background-color: rgba(231, 148, 244, 0.922);
+    }
+}
